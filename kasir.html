@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Pilih Items</h1>
+    <div style="display: flex; justify-content: center; align-items: center">
+      <p>Pulpen Rp. 3000</p>
+      <button type="button" id="pilih">Pilih</button>
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: center">
+      <p>Jumlah:</p>
+      <input type="text" id="jumlahBeli" class="d-none" value="1" />
+    </div>
+
+    <button type="button" id="jumlah">Beli</button>
+    <p id="results"></p>
+    
+    <div style="display: flex; justify-content: center; align-items: center">
+        <p>uang Anda:</p>
+        <input type="text" id="uang" class="d-none" value="1" />
+      </div>
+
+
+    <script>
+      var pulpen = 3000
+      var pensil = 2000
+      var buku = 5000
+      var penghapus = 1000
+      var uang = document.querySelector("#uang");
+      var jmlBeli = document.querySelector("#jumlahBeli");
+      var pilih = document.querySelector("#pilih");
+      var button = document.querySelector("#jumlah");
+      var ress = document.querySelector("#results");
+
+      pilih.addEventListener("click", () => {
+        jmlBeli.classList.replace('d-none', 'd-block')
+      });
+
+      button.addEventListener('click', () => {
+        if(jmlBeli.value < 1) {
+            alert("Maaf Setidaknya Anda Harus Beli 1 Items")
+            window.location.href = "kasir.html"
+        }
+        else {
+            
+        }
+      })
+    </script>
+  </body>
+</html>

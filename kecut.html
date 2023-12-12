@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   
+    <input type="text" id="tinggi">
+    <button type="button" id="jumlah">Check</button>
+    <p id="results"></p>
+
+    <script>
+
+        var tinggi = document.querySelector('#tinggi')
+        var button = document.querySelector('#jumlah')
+        var ress  = document.querySelector('#results')
+
+        button.addEventListener('click', () => {
+            var rumus = (1/3) * MATH.PI * MATH.POW(5, 2) * tinggi
+            ress.innerHTML = rumus   
+
+        })
+         
+    </script>
+</body>
+</html>

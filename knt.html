@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="panjang"> 
+    <input type="text" id="lebar">
+    <input type="text" id="tinggi">
+    <button type="button" id="jumlah">Check</button>
+    <pc id="results"></p>
+
+    <script>
+
+        var panjang = document.querySelector('#panjang')
+        var lebar = document.querySelector('#lebar')
+        var tinggi = document.querySelector('#tinggi')
+        var button = document.querySelector('#jumlah')
+        var ress  = document.querySelector('#results')
+
+        button.addEventListener('click', () => {
+            var rumus = panjang.value * lebar.value * tinggi.value
+            ress.innerHTML = rumus   
+
+        })
+         
+    </script>
+</body>
+</html>
